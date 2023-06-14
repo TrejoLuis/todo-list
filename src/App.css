@@ -1,0 +1,7 @@
+#todoContainer{
+  width: clamp(350px, 80vw ,680px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}

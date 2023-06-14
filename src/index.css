@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --clr-lt-sh: 251, 252, 246;
+  --clr-lt-ac: 235, 144, 129;
+  --clr-main: 159, 107, 106;
+  --clr-dk-ac: 100, 88, 103;
+  --clr-dk-sh: 35, 26, 52;
+
+  /* --fnt-size: 2vw, 1.3rem, 4vw; */
+  --fnt-size: 1rem, 4vw + 1rem, 1.3rem;
+  --todo-btn-size: 1rem, 4vw + 0.5rem, 1.2rem;
+}
+
+#root{
+  min-height: 100vh;
+  /* width: clamp(350px, 80vw ,1280px); */
+  font-size: clamp(var(--fnt-size));
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  border: 1px solid blue;
+  background-color: rgb(var(--clr-lt-sh))
+}
+
+.visually-hidden {
+      position: absolute;
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0,0,0,0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}

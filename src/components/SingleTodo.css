@@ -1,0 +1,96 @@
+.todo{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(var(--clr-dk-ac));
+  color: rgb(var(--clr-lt-sh));
+}
+
+.todo-header{
+  align-self: flex-end;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.todo-main{
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  /* align-items: center; */
+  cursor: pointer;
+  text-align: right;
+}
+
+.todo-isDone{
+  /* width: clamp(var(--todo-btn-size)); */
+  /* height: clamp(var(--todo-btn-size)); */
+  width: 16px;
+  height: 16px;
+  background-color: rgba(var(--clr-lt-sh), 0.8);
+  border-radius: 50%;
+}
+
+.todo-main.done .todo-isDone{
+  content: url('../assets/check.svg')
+}
+
+.todo-main.done .todo-text{
+  text-decoration: line-through;
+}
+
+.todo-edit{
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.todo-editInput{
+  font-size: 0.8em; 
+  width: 100%;
+  padding: 0.2em 0.5em;
+}
+
+.todo-editBtn{
+  font-size: 0.7em;
+  padding: 0.1em 0.3em;
+  background: transparent;
+  border: 1px solid rgb(var(--clr-lt-sh));
+  color: rgb(var(--clr-lt-sh));
+  cursor: pointer;
+}
+
+.todo-editBtn:hover{
+  background-color: rgb(var(--clr-lt-sh));
+  color: rgb(var(--clr-dk-ac));
+}
+
+.todo-editBtn:active{
+  transform: translate(0px, 1px);
+}
+
+.todo-btn{
+  background: transparent;
+  border: 1px solid rgb(var(--clr-lt-sh));
+  padding: 0.2em;
+  color: inherit;
+  display: flex;
+  cursor: pointer;
+
+}
+.todo-btn>svg{
+  width: clamp(var(--todo-btn-size));
+  height: clamp(var(--todo-btn-size));
+}
+
+.todo-btn:hover{
+  color: rgb(var(--clr-dk-ac));
+  background-color: rgb(var(--clr-lt-sh));
+  border-color: rgb(var(--clr-dk-ac));
+}
+
+.todo-btn:active{
+  transform: translate(0px, 1px);
+}
+
