@@ -7,32 +7,49 @@
 }
 
 :root{
-  --clr-lt-sh: 251, 252, 246;
-  --clr-lt-ac: 235, 144, 129;
-  --clr-main: 159, 107, 106;
-  --clr-dk-ac: 100, 88, 103;
-  --clr-dk-sh: 35, 26, 52;
+  /* --clr-lt-sh: 251, 252, 246; */
+  /* --clr-lt-ac: 235, 144, 129; */
+  /* --clr-main: 159, 107, 106; */
+  /* --clr-dk-ac: 100, 88, 103; */
+  /* --clr-dk-sh: 35, 26, 52; */
+
+  --clr-lt: #F3F5E8;
+  --clr-dk: #172332; 
+  --clr-main-30: #3693A4;
+  --clr-main-40: #298595;
+  --clr-main-50: #207988;
+  --clr-main-60: #176E7C;
+  --clr-main-70: #116472;
 
   /* --fnt-size: 2vw, 1.3rem, 4vw; */
   --fnt-size: 1rem, 4vw + 1rem, 1.3rem;
   --todo-btn-size: 1rem, 4vw + 0.5rem, 1.2rem;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body{
+  background-color: var(--clr-lt);
+  font-family: 'Lato', sans-serif;
+}
+
+input{
+  font-family: inherit;
+}
+
 #root{
   min-height: 100vh;
-  /* width: clamp(350px, 80vw ,1280px); */
+  width: clamp(350px, 80vw ,1280px);
   font-size: clamp(var(--fnt-size));
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  border: 1px solid blue;
-  background-color: rgb(var(--clr-lt-sh))
 }
 
 .visually-hidden {
-      position: absolute;
+  position: absolute;
 	position: absolute !important;
 	width: 1px !important;
 	height: 1px !important;

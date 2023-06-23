@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Todos from './components/Todos'
 import TodoForm from './components/TodoForm.jsx'
 import './App.css'
+import NavHeader from './components/NavHeader'
 const dummyTodos = [
   {
     text: 'Amet quam inventore est',
@@ -70,10 +71,9 @@ function App () {
 
   return (
     <>
-      <header>
-        <h1>Todo List</h1>
-      </header>
+      <NavHeader />
       <main id='todoContainer'>
+        <h1 className='user-greet'>Hello name</h1>
         <TodoForm
           newTodoText={todo}
           onChangeNewTodo={onChangeNewTodo}

@@ -1,36 +1,37 @@
 #todo-form{
   /* background-color: rgb(var(--clr-dk-sh)); */
-  background-color: rgba(var(--clr-main), 0.4);
+  background-color: var(--clr-main-50);
   padding: 1rem ;
   width: 100%;
   height: 4rem;
   display: flex;
-  justify-content: center;
+  border-radius: 0.5rem;
+  justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
 }
 #input-todoText{
-  width: 80%;
+  width: 100%;
   height: 2rem;
   padding: 0.5em;
-  background-color: rgba(var(--clr-main), 0.8);
-  color: rgb(var(--clr-lt-sh));
+  background-color: var(--clr-main-50);
+  color: var(--clr-lt);
   font-size: inherit;
   outline: none;
   border: none;
 }
 #todo-form>button{
   background: transparent;
-  border: 2px solid rgb(var(--clr-dk-sh));
-  display: inline-flex;
+  border: none;
+  /* display: inline-flex; */
   align-items: center;
-  color: rgb(var(--clr-dk-sh));
+  color: var(--clr-lt);
+  cursor: pointer;
   height: 2rem;
 }
 #todo-form>button:hover{
-  color: rgb(var(--clr-main));
-  background-color: rgb(var(--clr-dk-sh));
-
+  color: var(--clr-lt);
+  transform: scale(1.5);
 }
 #todo-form svg{
   width: inherit;

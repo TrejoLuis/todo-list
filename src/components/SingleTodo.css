@@ -1,8 +1,9 @@
 .todo{
   display: flex;
   flex-direction: column;
-  background-color: rgb(var(--clr-dk-ac));
-  color: rgb(var(--clr-lt-sh));
+  background-color: var(--clr-dk);
+  color: var(--clr-lt);
+  border-radius: 0.5rem;
 }
 
 .todo-header{
@@ -16,19 +17,21 @@
 
 .todo-main{
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   padding: 0.5rem 1rem;
-  /* align-items: center; */
+  align-items: center;
   cursor: pointer;
-  text-align: right;
+  text-align: left;
 }
 
 .todo-isDone{
   /* width: clamp(var(--todo-btn-size)); */
   /* height: clamp(var(--todo-btn-size)); */
-  width: 16px;
-  height: 16px;
-  background-color: rgba(var(--clr-lt-sh), 0.8);
+  /* width: 16px; */
+  /* height: 16px; */
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--clr-lt);
   border-radius: 50%;
 }
 
@@ -39,6 +42,9 @@
 .todo-main.done .todo-text{
   text-decoration: line-through;
 }
+.todo-text{
+  display: inline;
+}
 
 .todo-edit{
   display: flex;
@@ -47,23 +53,29 @@
 }
 
 .todo-editInput{
-  font-size: 0.8em; 
+  font-size: 1em; 
   width: 100%;
   padding: 0.2em 0.5em;
+  background-color: var(--clr-lt);
+  border: none;
+  outline: none;
+  color: var(--clr-dk);
+  border-radius: 0.5rem;
 }
 
 .todo-editBtn{
-  font-size: 0.7em;
+  font-size: 1em;
   padding: 0.1em 0.3em;
-  background: transparent;
-  border: 1px solid rgb(var(--clr-lt-sh));
-  color: rgb(var(--clr-lt-sh));
+  background: var(--clr-main-50);
+  border: none;
+  color: var(--clr-dk);
   cursor: pointer;
+  border-radius: 0.5rem;
 }
 
 .todo-editBtn:hover{
-  background-color: rgb(var(--clr-lt-sh));
-  color: rgb(var(--clr-dk-ac));
+  background-color: var(--clr-dk);
+  color: var(--clr-lt);
 }
 
 .todo-editBtn:active{
@@ -72,25 +84,29 @@
 
 .todo-btn{
   background: transparent;
-  border: 1px solid rgb(var(--clr-lt-sh));
+  /* border: 1px solid var(--clr-lt); */
+  border: none;
   padding: 0.2em;
-  color: inherit;
+  color: var(--clr-main-50);
   display: flex;
   cursor: pointer;
 
 }
 .todo-btn>svg{
-  width: clamp(var(--todo-btn-size));
-  height: clamp(var(--todo-btn-size));
+  /* width: clamp(var(--todo-btn-size)); */
+  /* height: clamp(var(--todo-btn-size)); */
+  width: 1.5rem; 
+  height: 1.5rem; 
 }
 
 .todo-btn:hover{
-  color: rgb(var(--clr-dk-ac));
-  background-color: rgb(var(--clr-lt-sh));
-  border-color: rgb(var(--clr-dk-ac));
+  color: var(--clr-main-30);
+  /* background-color: var(--clr-lt); */
+  /* border-color: var(--clr-dk); */
+  transform: scale(1.5);
 }
 
 .todo-btn:active{
-  transform: translate(0px, 1px);
+  transform: none; 
 }
 
